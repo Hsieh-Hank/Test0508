@@ -1,10 +1,11 @@
+package com.example.test0508;
 public class StuData {
     private String id;
     private String name;
     private String height;
 
     public String getId() {
-         return id;
+        return id;
     }
 
     public void setId(String id) {
@@ -33,3 +34,4 @@ public class StuData {
         this.height = height;
     }
 }
+
