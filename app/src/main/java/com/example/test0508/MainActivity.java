@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.rvMyData);
 
         List<StuData> stuDataList = new ArrayList<>();
-        stuDataList.add(new StuData(R.drawable.cjcu, "John", "180"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Tom", "175"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Jerry", "170"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Mike", "165"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Jack", "160"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Rose", "155"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Lily", "150"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Lucy", "145"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Bob", "140"));
-        stuDataList.add(new StuData(R.drawable.cjcu, "Alice", "135"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "John", "180"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Tom", "175"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Jerry", "170"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Mike", "165"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Jack", "160"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Rose", "155"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Lily", "150"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Lucy", "145"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Bob", "140"));
+        stuDataList.add(new StuData("https://www.apple.com/newsroom/images/logos/quick-reads-logos/Apple-environment-logo.jpg.square_social.jpg", "Alice", "135"));
 
         recyclerView.setAdapter(new StuDataAdapter(stuDataList));
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

@@ -10,6 +10,8 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 public class StuDataAdapter extends RecyclerView.Adapter<StuDataAdapter.ViewHolder>{
     private ImageView img;
     private  TextView tvname1;
@@ -41,7 +43,8 @@ public class StuDataAdapter extends RecyclerView.Adapter<StuDataAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull StuDataAdapter.ViewHolder holder, int position) {
         StuData stuData = stuDataList.get(position);
-        img.setImageResource(stuData.getId());
+//        img.setImageResource(stuData.getId());
+        Glide.with(holder.itemView).load(stuData.getImageURL()).into(img);
         tvname1.setText(stuData.getName());
         tvheight1.setText(stuData.getHeight());
     }

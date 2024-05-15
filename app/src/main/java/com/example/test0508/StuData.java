@@ -3,6 +3,21 @@ public class StuData {
     private Integer id;
     private String name;
     private String height;
+    private String imageURL;
+
+    public StuData(String imageURL, String name, String height) {
+        this.name = name;
+        this.height = height;
+        this.imageURL = imageURL;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
 
     public Integer getId() {
 
