@@ -1,58 +1,53 @@
 package com.example.test0508;
+
 public class StuData {
-    private Integer id;
+
+    private int id;
     private String name;
     private String height;
-    private String imageURL;
+    private String imageUrl;
 
-    public StuData(String imageURL, String name, String height) {
+    public StuData(int id, String name, String height) {
+        this.id = id;
         this.name = name;
         this.height = height;
-        this.imageURL = imageURL;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public StuData(String imageUrl, String name, String height) {
+        this.name = name;
+        this.height = height;
+        this.imageUrl = imageUrl;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public Integer getId() {
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
-
+    public void setId(int id) {
         this.id = id;
     }
 
     public String getName() {
-
         return name;
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
     public String getHeight() {
-
         return height;
     }
 
     public void setHeight(String height) {
-
-        this.height = height;
-    }
-
-    public StuData(Integer id, String name, String height) {
-        this.id = id;
-        this.name = name;
         this.height = height;
     }
 }
-
